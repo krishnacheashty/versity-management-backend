@@ -8,8 +8,8 @@ const createUser = async (req: Request, res: Response) => {
     res.status(200).json({
       success: 'true',
       massage: 'successfully create user',
+      data: result,
     })
-    return result
   } catch (error) {
     res.status(400).json({
       success: 'false',

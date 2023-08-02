@@ -13,7 +13,3 @@ export const generateUserId = async () => {
   const updatedId = (parseInt(currentId) + 1).toString().padStart(5, '0')
   return updatedId
 }
-
-export default {
-  findLastUserId,
-}
