@@ -19,6 +19,21 @@
             "date": 1691483325138,
             "name": "F:\\management-university\\logs\\winston\\success\\vm-08-08-2023-14-success.log",
             "hash": "8953d60bcf361655d944a8a5b42cecd57cdb5ba84f559c5b41c929bdaa4dd611"
+        },
+        {
+            "date": 1691516661773,
+            "name": "F:\\management-university\\logs\\winston\\success\\vm-08-08-2023-23-success.log",
+            "hash": "7c162155f1f36e48ad579719e5a6aba6f4e6c4264de8f867c949200ff0196030"
+        },
+        {
+            "date": 1691518298856,
+            "name": "F:\\management-university\\logs\\winston\\success\\vm-09-08-2023-00-success.log",
+            "hash": "3f1dc6c39554dcb275a0b292a2a81d7e28dc845289ac4a4b0cfb1a873e38236f"
+        },
+        {
+            "date": 1691521295781,
+            "name": "F:\\management-university\\logs\\winston\\success\\vm-09-08-2023-01-success.log",
+            "hash": "b31ccfaccf757a22abfb100e9cb00c3d1510b84661bdf6992823f46e73e6c86f"
         }
     ],
     "hashType": "sha256"

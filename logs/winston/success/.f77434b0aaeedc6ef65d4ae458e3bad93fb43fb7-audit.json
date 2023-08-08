@@ -1,45 +1,45 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 2
+  "keep": {
+    "days": true,
+    "amount": 2
+  },
+  "auditLog": "F:\\management-university\\logs\\winston\\success\\.f77434b0aaeedc6ef65d4ae458e3bad93fb43fb7-audit.json",
+  "files": [
+    {
+      "date": 1691084905384,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-03-23-success.log",
+      "hash": "a1fb63a7216f40a930547783b8b46914c0b1bc8e5fb1587cca2cc9b6750cf637"
     },
-    "auditLog": "F:\\management-university\\logs\\winston\\success\\.f77434b0aaeedc6ef65d4ae458e3bad93fb43fb7-audit.json",
-    "files": [
-        {
-            "date": 1691084905384,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-03-23-success.log",
-            "hash": "a1fb63a7216f40a930547783b8b46914c0b1bc8e5fb1587cca2cc9b6750cf637"
-        },
-        {
-            "date": 1691085693800,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-00-success.log",
-            "hash": "a219f7b6f22be00758e0cc6ba78f7c6282717b212defb866a97c5755e923c546"
-        },
-        {
-            "date": 1691089266840,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-01-success.log",
-            "hash": "9fa0c32bcc081e20603117d452136c535b8d0d9f1dc9f84b57f26d0b4bcf0b02"
-        },
-        {
-            "date": 1691093778994,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-02-success.log",
-            "hash": "880c5b31056ca455fcaabfe154b0718eebd7761867d4675d910b158b46f873d8"
-        },
-        {
-            "date": 1691227723602,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-15-success.log",
-            "hash": "8d749f0b3f4d985bb6d5f4147a8b29f6f197b6c9ff3780063422685e4464d5f6"
-        },
-        {
-            "date": 1691252001583,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-22-success.log",
-            "hash": "12524493f55d38f4111bf1550125e4989b68f92845a30b67cd1216635df8b296"
-        },
-        {
-            "date": 1691254925799,
-            "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-23-success.log",
-            "hash": "a98a0c649e9b39d35d2a18a3f2bc80dda10efc1e76be3914f5e7968ff8a069b5"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1691085693800,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-00-success.log",
+      "hash": "a219f7b6f22be00758e0cc6ba78f7c6282717b212defb866a97c5755e923c546"
+    },
+    {
+      "date": 1691089266840,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-01-success.log",
+      "hash": "9fa0c32bcc081e20603117d452136c535b8d0d9f1dc9f84b57f26d0b4bcf0b02"
+    },
+    {
+      "date": 1691093778994,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-04-02-success.log",
+      "hash": "880c5b31056ca455fcaabfe154b0718eebd7761867d4675d910b158b46f873d8"
+    },
+    {
+      "date": 1691227723602,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-15-success.log",
+      "hash": "8d749f0b3f4d985bb6d5f4147a8b29f6f197b6c9ff3780063422685e4464d5f6"
+    },
+    {
+      "date": 1691252001583,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-22-success.log",
+      "hash": "12524493f55d38f4111bf1550125e4989b68f92845a30b67cd1216635df8b296"
+    },
+    {
+      "date": 1691254925799,
+      "name": "F:\\management-university\\logs\\winston\\success\\vm-2023-08-05-23-success.log",
+      "hash": "a98a0c649e9b39d35d2a18a3f2bc80dda10efc1e76be3914f5e7968ff8a069b5"
+    }
+  ],
+  "hashType": "sha256"
 }

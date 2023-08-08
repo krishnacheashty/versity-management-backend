@@ -6,6 +6,8 @@ import handelValidationError from '../../error/handelValidationError'
 import { IGenericErrormessage } from '../../interfaces/error'
 import ApiError from '../../error/ApiError'
 import { errorlogger } from '../../sheared/logger'
+import { ZodError } from 'zod'
+import handelZodError from '../../error/handelZodError'
 
 const globalErrorHandeler: ErrorRequestHandler = (error, req, res, next) => {
   // for controlling console depend on config.env
@@ -23,6 +25,11 @@ const globalErrorHandeler: ErrorRequestHandler = (error, req, res, next) => {
     statusCode = simplefiederror.statusCode
     message = simplefiederror.message
     errormessage = simplefiederror.errorMessages
+  } else if (error instanceof ZodError) {
+    const simplifiedzoderror = handelZodError(error)
+    statusCode = simplifiedzoderror.statusCode
+    message = simplifiedzoderror.message
+    errormessage = simplifiedzoderror.errorMessages
   } else if (error instanceof ApiError) {
     statusCode = error?.statusCode
     message = error?.message
