@@ -6,6 +6,6 @@ type IUser = {
   password: string
 }
 
-type UserModel = Model<IUser, object>
+type UserModel = Model<IUser, Record<string, unknown>>
 
 export { IUser, UserModel }

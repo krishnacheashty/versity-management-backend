@@ -26,7 +26,7 @@ const logger = createLogger({
         'success',
         'vm-%DATE%-success.log',
       ),
-      datePattern: 'YYYY-MM-DD-HH',
+      datePattern: 'DD-MM-YYYY-HH',
       zippedArchive: true,
       maxSize: '20m',
       maxFiles: '2d',
@@ -34,7 +34,7 @@ const logger = createLogger({
   ],
 })
 
-const errorLogger = createLogger({
+const errorlogger = createLogger({
   level: 'error',
   format: combine(label({ label: 'KC' }), timestamp(), myFormat, prettyPrint()),
   transports: [
@@ -47,7 +47,7 @@ const errorLogger = createLogger({
         'error',
         'vm-%DATE%-error.log',
       ),
-      datePattern: 'YYYY-MM-DD-HH',
+      datePattern: 'DD-MM-YYYY-HH',
       zippedArchive: true,
       maxSize: '20m',
       maxFiles: '2d',
@@ -55,4 +55,4 @@ const errorLogger = createLogger({
   ],
 })
 
-export { logger, errorLogger }
+export { logger, errorlogger }
