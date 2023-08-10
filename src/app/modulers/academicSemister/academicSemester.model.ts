@@ -18,7 +18,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemestertitle,
     },
     year: {
-      type: String || Number,
+      type: Number,
       required: true,
     },
     code: {

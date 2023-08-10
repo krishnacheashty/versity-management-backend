@@ -4,11 +4,13 @@ import { IGenericErrorResponse } from '../interfaces/common'
 
 const handelZodError = (error: ZodError): IGenericErrorResponse => {
   const errors: IGenericErrormessage[] = error.issues.map((issue: ZodIssue) => {
+    // console.log(issue)
     return {
       path: issue?.path[issue.path.length - 1],
       message: issue?.message,
     }
   })
+
   const statusCode = 400
   return {
     statusCode,
