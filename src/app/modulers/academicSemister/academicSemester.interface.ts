@@ -18,7 +18,7 @@ export type IAcademicSemesterCode = '01' | '02' | '03'
 
 type IAcademicSemester = {
   title: IAcademicSemesterTitle
-  year: string | number
+  year: number
   code: IAcademicSemesterCode
   startMonth: IAcademicSemesterMonth
   endMonth: IAcademicSemesterMonth
