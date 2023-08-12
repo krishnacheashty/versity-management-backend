@@ -1,23 +1,25 @@
-import { RequestHandler } from 'express'
+import { Request, Response, NextFunction } from 'express'
 import { AcademicSemesterService } from './academicSemester.service'
+import caughtAsync from '../../../sheared/caughtAsync'
+import sendResponce from '../../../sheared/sendResponce'
+import httpStatus from 'http-status'
 
-const createSemester: RequestHandler = async (req, res, next) => {
-  try {
+const createSemester = caughtAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
     const { ...academicSemesterData } = req.body
 
     const result = await AcademicSemesterService.createAcademicSemester(
       academicSemesterData,
     )
-
-    res.status(200).json({
-      success: 'true',
+    next()
+    sendResponce(res, {
+      statusCode: httpStatus.OK,
+      success: true,
       message: 'successfully create Academic Semester Data',
       data: result,
     })
-  } catch (error) {
-    next(error)
-  }
-}
+  },
+)
 
 export const AcademicSemesterController = {
   createSemester,
