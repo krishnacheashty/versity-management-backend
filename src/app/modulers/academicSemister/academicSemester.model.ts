@@ -8,6 +8,8 @@ import {
   academicSemestercode,
   academicSemestertitle,
 } from './academicSemester.const'
+import status from 'http-status'
+import ApiError from '../../../error/ApiError'
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -41,6 +43,20 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     timestamps: true,
   },
 )
+//regist duplicate semester
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AcademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  })
+  if (isExist) {
+    throw new ApiError(
+      status.CONFLICT,
+      'univercity semester is already created !',
+    )
+  }
+  next()
+})
 
 export const AcademicSemester = model<IAcademicSemester, AcademicSemesterModel>(
   'AcademicSemester',

@@ -20,8 +20,15 @@ export const academicSemesterMonth: IAcademicSemesterMonth[] = [
 ]
 
 export const academicSemestertitle: IAcademicSemesterTitle[] = [
-  'autumn',
-  'summer',
-  'fall',
+  'Autumn',
+  'Summer',
+  'Fall',
 ]
 export const academicSemestercode: IAcademicSemesterCode[] = ['01', '02', '03']
+
+//here we make a type of key value and use in mapper.this mapper take it like a parameter like key value
+export const academicSemesterTitleCodeMapper: { [key: string]: string } = {
+  Autumn: '01',
+  Summer: '02',
+  Fall: '03',
+}

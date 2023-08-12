@@ -1,0 +1,12 @@
+{
+  message: '🤩 connect to database',
+  level: 'info',
+  label: 'KC',
+  timestamp: '2023-08-12T12:46:50.086Z'
+}
+{
+  message: 'Example app listening on port  5000',
+  level: 'info',
+  label: 'KC',
+  timestamp: '2023-08-12T12:46:50.119Z'
+}
