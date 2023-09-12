@@ -11,13 +11,14 @@ const createSemester = caughtAsync(
     const result = await AcademicSemesterService.createAcademicSemester(
       academicSemesterData,
     )
-    next()
+
     sendResponce(res, {
       statusCode: httpStatus.OK,
       success: true,
       message: 'successfully create Academic Semester Data',
       data: result,
     })
+    next()
   },
 )
 
