@@ -3,9 +3,11 @@ import { z } from 'zod'
 //create zod validation sheama
 const zodUserValidationSchema = z.object({
   body: z.object({
-    role: z.string({
-      required_error: 'role is required',
-    }),
+    role: z
+      .string({
+        required_error: 'role is required',
+      })
+      .optional(), //but why it be optional??
     password: z.string().optional(),
   }),
 })
@@ -13,11 +15,3 @@ const zodUserValidationSchema = z.object({
 export const userController = {
   zodUserValidationSchema,
 }
-// z.object({
-//   body: z.object({
-//     role: z.string({
-//       required_error: 'role is required',
-//     }),
-//     password: z.string().optional(),
-//   }),
-// })
